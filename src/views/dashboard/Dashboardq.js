@@ -1,15 +1,10 @@
 import { Grid } from "@mui/material"
 import iauction from "iauction"
 import { useEffect, useState } from "react"
-import { useDispatch } from "react-redux"
-import { Navigate } from "react-router-dom"
 import LogoutButton from "../../layouts/components/LogoutButton"
-import { handleLogout } from "../../redux/auth"
 
 
-const minutesToAdd= 10;
-const currentDate = new Date()
-const futureDate = new Date(currentDate.getTime() + minutesToAdd*1000)
+
 
 const Dashboardq = () => {
     // const init = Math.floor(Date.now() / 1000) // in second
